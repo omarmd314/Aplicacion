@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Ingrese su nombre de usuario!!!", Toast.LENGTH_SHORT).show();
         } else if (psswd.getText().toString().isEmpty()) {
             Toast.makeText(this, "Ingrese su contraseña!!!", Toast.LENGTH_SHORT).show();
-        } else if(usuario.getText().toString().equals("omar") && psswd.getText().toString().equals("1996")){
-            i.putExtra("nombre",usuario.getText().toString());
+        } else if(usuario.getText().toString().equals(usureg) && psswd.getText().toString().equals(passreg)){
+            i.putExtra("nombre",usureg);
             i.putExtra("curso", curso);
             startActivity(i);
             finish();
