@@ -56,7 +56,15 @@ public class Formulario extends AppCompatActivity {
     }
 
     public void Mostrar(View view){
-        String str = spinner.getSelectedItem().toString();
-        Toast.makeText(this, str , Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this, MainActivity.class);
+        String sp_curso = spinner.getSelectedItem().toString();
+        String usu = user.getText().toString();
+        String pwd = user.getText().toString();
+        i.putExtra("curso", sp_curso);
+        i.putExtra("user", usu);
+        i.putExtra("psswd", pwd);
+        startActivity(i);
+        finish();
+        // Toast.makeText(this, str , Toast.LENGTH_SHORT).show();
     }
 }

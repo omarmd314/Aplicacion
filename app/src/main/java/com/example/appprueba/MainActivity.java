@@ -16,8 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
     TextView usuario;
     TextView psswd;
-
     String curso;
+    String usureg;
+    String passreg;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +34,16 @@ public class MainActivity extends AppCompatActivity {
         usuario = findViewById(R.id.txtUsuario);
         psswd = findViewById(R.id.txtPsswd);
 
+        usureg = getIntent().getStringExtra("user");
+        passreg = getIntent().getStringExtra("psswd");
         curso = getIntent().getStringExtra("curso");
     }
 
     public void Mostrar(View view){
 
         Intent i = new Intent(this, Registro.class);
-        if(curso == null){
-            Toast.makeText(this, "No hay un curso registrado!!!", Toast.LENGTH_SHORT).show();
+        if(curso == null && usureg==null && passreg==null){
+            Toast.makeText(this, "No hay usuario registrado!!!", Toast.LENGTH_SHORT).show();
 
         }
         else if(usuario.getText().toString().isEmpty()){
