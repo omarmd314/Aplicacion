@@ -68,4 +68,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+
+    public void Tictac(View view){
+        Intent i = new Intent(this, tic_tac.class);
+        startActivity(i);
+        finish();
+    }
 }

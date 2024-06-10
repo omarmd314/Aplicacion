@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="Cambiar"
+    tools:context=".tic_tac">
+
+    <TextView
+        android:id="@+id/tictac"
+        android:layout_width="48dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="144dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#8BC34A"
+        android:onClick="Cambiar"
+        android:text="@string/tic_tac"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
