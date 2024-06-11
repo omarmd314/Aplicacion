@@ -83,6 +83,7 @@ public class Formulario extends AppCompatActivity {
         if (cb1.isChecked())
             ciclo = "CICLO II";
 
+
         Toast.makeText(this, "Usuario: "+usu+"\n"+
                        "Contraseña:" + pwd +"\n"+
                         "Curso:" + curso + "\n"+
