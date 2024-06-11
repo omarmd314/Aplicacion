@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">AppPrueba</string>
-    <string name="titulo">ExamenParcial</string>
+
+
+
+    <!-- LOGIN -->
+    <string name="app_name">Examen Parcial</string>
+    <string name="titulo">LOGIN</string>
     <string name="imgdesc">Perfil</string>
     <string name="tvUsuario">Usuario:</string>
     <string name="txtUsuario">Usuario…</string>
@@ -9,28 +13,32 @@
     <string name="btnIngresar">Ingresar</string>
     <string name="btnRegistrarse">Registrarse</string>
     <string name="txtImagen">Logo</string>
-    <string name="tvFrase">Bienvenido</string>
-    <string name="tvFormularioTit">Formulario de Registro</string>
-    <string name="btnRegresar1">Volver</string>
     <string name="btnRegresar2">Volver</string>
+    <string name="tvFrase">Bienvenido</string>
 
-    <!-- Formulario de Registro -->
+    <!-- -->
 
+    <!-- REGISTER -->
+    <string name="tvFormularioTit">Formulario de Registro</string>
     <string name="tvUsu">Usuario</string>
     <string name="txtUsu">Ingresa tu nombre de usuario</string>
     <string name="tvContra">Contraseña</string>
     <string name="txtContra">Ingresa tu contraseña</string>
     <string name="txtCurso">Curso</string>
     <string name="btnMostrar">Registrar</string>
-    <string name="tic_tac">x</string>
-    <!--  -->
+    <string name="btnRegresar1">Volver</string>
 
+    <!-- CURSOS - SPINNER -->
     <string-array name="cursos_array">
         <item>Mate 1</item>
         <item>Fisica 1</item>
         <item>Quimica </item>
         <item>Programacion </item>
     </string-array>
+    <!-- FIN CURSOS -->
+    <!--  -->
+
+    <string name="tic_tac">x</string>
 
 
 </resources>
