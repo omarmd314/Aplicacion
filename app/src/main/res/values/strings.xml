@@ -11,19 +11,24 @@
     <string name="tvPasswd">Contraseña:</string>
     <string name="txtPsswd">Contraseña…</string>
     <string name="btnIngresar">Ingresar</string>
-    <string name="btnRegistrarse">Registrarse</string>
+    <string name="btnRegistrarse"><u>Registrarse</u></string>
     <string name="txtImagen">Logo</string>
-    <string name="btnRegresar2">Volver</string>
     <string name="tvFrase">Bienvenido</string>
-
     <!-- -->
 
     <!-- REGISTER -->
-    <string name="tvFormularioTit">Formulario de Registro</string>
+    <string name="tvFormularioTit">Register</string>
     <string name="tvUsu">Usuario</string>
     <string name="txtUsu">Ingresa tu nombre de usuario</string>
     <string name="tvContra">Contraseña</string>
     <string name="txtContra">Ingresa tu contraseña</string>
+    <string name="tvSexo">Sexo:</string>
+    <string name="rb1">Masculino</string>
+    <string name="rb2">Femenino</string>
+    <string name="tvCiclo">Ciclo:</string>
+    <string name="cb1">Primer Ciclo</string>
+    <string name="cb2">Segundo Ciclo</string>
+
     <string name="txtCurso">Curso</string>
     <string name="btnMostrar">Registrar</string>
     <string name="btnRegresar1">Volver</string>

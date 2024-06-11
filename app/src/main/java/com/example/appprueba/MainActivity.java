@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     String passreg;
 
 
+    TextView btnRegistrarse;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,16 +36,17 @@ public class MainActivity extends AppCompatActivity {
         });
         usuario = findViewById(R.id.txtUsuario);
         psswd = findViewById(R.id.txtPsswd);
-
+        btnRegistrarse = findViewById(R.id.linkRegistro);
+        //btnRegistrarse.setText(Html.fromHtml(getResources().getString(R.string.mi_mensaje)));
         usureg = getIntent().getStringExtra("user");
         passreg = getIntent().getStringExtra("psswd");
         curso = getIntent().getStringExtra("curso");
     }
 
-    public void Mostrar(View view){
+    public void Tictac(View view){
 
-        Intent i = new Intent(this, Registro.class);
-        if(curso == null && usureg==null && passreg==null){
+        Intent i = new Intent(this, tic_tac.class);
+        if(usureg==null && passreg==null){
             Toast.makeText(this, "No hay usuario registrado!!!", Toast.LENGTH_SHORT).show();
 
         }
@@ -52,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Ingrese su contraseña!!!", Toast.LENGTH_SHORT).show();
         } else if(usuario.getText().toString().equals(usureg) && psswd.getText().toString().equals(passreg)){
             i.putExtra("nombre",usureg);
-            i.putExtra("curso", curso);
             startActivity(i);
             finish();
         } else {
@@ -64,14 +67,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void Registrar(View view) {
         Intent i = new Intent(this, Formulario.class);
-
         startActivity(i);
         finish();
     }
 
-    public void Tictac(View view){
+   /* public void Tictac(View view){
         Intent i = new Intent(this, tic_tac.class);
         startActivity(i);
         finish();
-    }
+    }*/
 }

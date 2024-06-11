@@ -42,6 +42,7 @@
         android:ems="10"
         android:hint="@string/txtUsuario"
         android:inputType="text"
+        android:maxLength="10"
         android:minHeight="48dp"
         android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,33 +62,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
 
-    <EditText
-        android:id="@+id/txtPsswd"
-        android:layout_width="292dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="16dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/txtPsswd"
-        android:inputType="text"
-        android:textColorHint="#546E7A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.31"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
     <Button
         android:id="@+id/button3"
         android:layout_width="289dp"
         android:layout_height="58dp"
+        android:layout_marginBottom="92dp"
         android:backgroundTint="#3F51B5"
-        android:onClick="Mostrar"
+        android:onClick="Tictac"
         android:text="@string/btnIngresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPsswd"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPsswd" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -102,7 +89,7 @@
         app:srcCompat="@drawable/csgo" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/linkRegistro"
         android:layout_width="119dp"
         android:layout_height="48dp"
         android:layout_marginTop="28dp"
@@ -117,16 +104,19 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextSizeCheck" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:onClick="Tictac"
-        android:text="Tictac"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
+    <EditText
+        android:id="@+id/txtPsswd"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/txtPsswd"
+        android:inputType="textPassword"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
