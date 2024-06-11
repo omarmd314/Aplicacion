@@ -37,12 +37,12 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="64dp"
         android:onClick="Volver"
         android:text="@string/btnRegresar1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -152,37 +152,37 @@
         android:id="@+id/radioGroup"
         android:layout_width="123dp"
         android:layout_height="93dp"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:layout_width="113dp"
+            android:layout_height="41dp"
+            android:minHeight="48dp"
+            android:text="@string/rb2"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
 
         <RadioButton
             android:id="@+id/rdb1"
             android:layout_width="123dp"
             android:layout_height="wrap_content"
             android:text="@string/rb1" />
-
-        <RadioButton
-            android:id="@+id/rdb2"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:minHeight="48dp"
-            android:text="@string/rb2"
-            tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spCursos"
+        tools:ignore="MissingConstraints"
         tools:text="@string/tvSexo" />
 
     <TextView
